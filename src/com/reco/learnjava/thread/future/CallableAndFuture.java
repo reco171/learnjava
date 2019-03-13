@@ -23,8 +23,8 @@ public class CallableAndFuture {
         });
         try {
         	System.out.println("do something");
-            //Thread.sleep(4000);// ������һЩ����
             System.out.println(future.get());
+            threadPool.shutdownNow();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
