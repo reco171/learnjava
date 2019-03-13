@@ -1,4 +1,4 @@
-package com.reco.learnjava.thread;
+package com.reco.learnjava.thread.produconsu;
 
 public class TestRunnable implements Runnable{
 	private int ticket=10;  

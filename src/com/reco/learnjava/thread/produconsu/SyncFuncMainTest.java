@@ -1,4 +1,4 @@
-package com.reco.learnjava.thread;
+package com.reco.learnjava.thread.produconsu;
 /**
  * http://www.jianshu.com/p/40d4c7aebd66
  * http://www.importnew.com/21136.html

@@ -1,4 +1,4 @@
-package com.reco.learnjava.thread;
+package com.reco.learnjava.thread.produconsu;
 
 /*
  * 多个线程分别对变量写读

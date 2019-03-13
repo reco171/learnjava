@@ -1,9 +1,9 @@
-package com.reco.learnjava.thread;
+package com.reco.learnjava.thread.produconsu;
 
-public class ProducerThread implements Runnable {
+public class ConsumerThread implements Runnable {
 	ProductStore productStore = new ProductStore();
 	private String name;
-	public ProducerThread(ProductStore productStore, String name){
+	public ConsumerThread(ProductStore productStore, String name){
 		this.productStore = productStore;
 		this.name = name;
 	}
@@ -12,16 +12,17 @@ public class ProducerThread implements Runnable {
 		// TODO Auto-generated method stub
 		while(true){
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			productStore.produce();
+			productStore.consume();
 			if(name != null){
-				System.out.println("producer "+name+" producer once");
+				System.out.println("consumer "+name+" consume once");
 			}
 		}
 	}
+
 
 }

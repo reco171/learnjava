@@ -1,4 +1,4 @@
-package com.reco.learnjava.thread;
+package com.reco.learnjava.thread.produconsu;
 /*
  * Test 同步代码块格式
  * 
